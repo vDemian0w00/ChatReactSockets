@@ -26,6 +26,10 @@ app.use(express.json());
 app.use("/api/v1/users", userRoutes);
 app.use("/api/v1/messages", messageRoutes);
 
+app.get("/app", (req, res)=>{
+  res.sendFile(join(__public, "index.html"));
+})
+
 //routes
 server.listen(PORT, () => console.log(`Server initialized on port ${PORT}`));
 
