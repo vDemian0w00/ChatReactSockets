@@ -31,7 +31,7 @@ server.listen(PORT, () => console.log(`Server initialized on port ${PORT}`));
 
 const io = new Server(server, {
   cors: {
-    origin: `http://localhost:5173`,
+    origin: `https://sockets-react.up.railway.app/`,
     credentials: true,
   },
 });

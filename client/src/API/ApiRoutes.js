@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const HOST = "http://localhost:3000/";
+export const HOST = "https://sockets-react.up.railway.app/";
 
 const API_URL = `${HOST}api/v1/`;
 
